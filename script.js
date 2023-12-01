@@ -9,11 +9,7 @@ sun.addEventListener("click", rotate);
 moon.addEventListener("click", rotate);
 
 function rotate() {
-  if (
-    text.innerHTML ==
-      "coba klik matahari nya deh, I guarantee you'll be amazed" ||
-    scene >= 44
-  ) {
+  if (text.innerHTML == "coba tap mataharinya" || scene >= 44) {
     rotation = rotation + 0.5;
     daynight.style.transform = "rotate(" + rotation + "turn)";
     document.body.classList.toggle("dark-theme");
@@ -132,16 +128,15 @@ content.addEventListener("click", function () {
   } else if (scene == 16) {
     text.innerHTML = "ada yg kurang ga sii 🤔";
   } else if (scene == 17) {
-    text.innerHTML = "coba kita kasi sulap dikit lah ya";
+    text.innerHTML = "tapi keliatan nya masih biasa aja ya?";
   } else if (scene == 18) {
-    text.innerHTML = "ready ?";
+    text.innerHTML = "langit nya juga sepi bet";
   } else if (scene == 19) {
-    text.innerHTML =
-      "aku inget kamu pernah bilang kalo kamu suka disney, magical land gitu";
+    text.innerHTML = "coba kita kasi sulap dikit lah ya";
   } else if (scene == 20) {
-    text.innerHTML = "jadi... let me show you how magical this night would be";
+    text.innerHTML = "ready ?";
   } else if (scene == 21) {
-    text.innerHTML = "u ready?";
+    text.innerHTML = "spesial untuk noraa";
   } else if (scene == 22) {
     $(".fireworks").fireworks({
       sound: false,
@@ -166,7 +161,7 @@ content.addEventListener("click", function () {
       } else if (count == -5) {
         text.style.animation = "fade 2s linear";
         text.style.fontSize = "18px";
-        text.innerHTML = "Happy Birthday";
+        text.innerHTML = "HAPPY BIRTHDAY";
         clearInterval(actionInterval);
       }
       count--;
@@ -176,7 +171,7 @@ content.addEventListener("click", function () {
     text.style.top = "23%";
     text.innerHTML = "teruntuk kamu, selamat ulang tahun ya";
   } else if (scene == 24) {
-    text.innerHTML = "sorry kado nya kemaleman hehe";
+    text.innerHTML = "maaf atas keterlambatan pohon spesial ini yaa";
   } else if (scene == 25) {
     text.innerHTML = "kado nya aku kasih 500 bintang aja ya...";
   } else if (scene == 26) {
@@ -244,7 +239,7 @@ content.addEventListener("click", function () {
       count--;
     }, 1000);
   } else if (scene == 44) {
-    window.location.href = "https://wipinn.wixsite.com/happybirthdaybebii";
+    window.location.href = "https://wipinn.wixsite.com/for-annora";
   } else if (scene >= 46) {
     text.innerHTML = "";
     magic.style.display = "none";
